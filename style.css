@@ -8,6 +8,7 @@ body{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    color: var(--primary-color);
 }
 
 :root{
@@ -157,17 +158,19 @@ body{
     background-color: #05D352;
 }
 
-.categories{
+.categories,.explore{
     margin-top: 60px;
 }
 
-.categories__title h2{
+.categories__title h2,
+.explore__title h2{
    font-size: 20px;
    margin-bottom: 10px;
    color: var(--primary-color);
 }
 
-.categories__title p{
+.categories__title p,
+.explore__title p{
     font-size: 16px;
     color: #39443A;
     margin-bottom: 10px;
@@ -181,7 +184,8 @@ body{
     position: relative;
 }
 
-.categories__images__card img{
+.categories__images__card img,
+.explore__card img{
     width: 270px;
     height: 270px;
     border-radius: 10px ;
@@ -197,4 +201,54 @@ body{
 
 .categories__images__card img:hover{
     filter:opacity(0.8);
+}
+
+.explore__card{
+    display: flex;
+   gap: 20px;
+}
+.explore__card__items{
+    position: relative;
+
+}
+.explore__card__items h2{
+    margin-top: 10px;
+    font-size: 16px;
+    text-align:start;
+}
+.explore__card__ratings{
+   font-size: 14px;
+   margin-top: 10px;
+   font-weight: 300;
+}
+
+.explore__card__price{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.explore__card img:hover{
+    filter:opacity(0.8);
+}
+
+.explore__card__items i{
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    top: 10px;
+    right: 10px;
+}
+
+.explore__card__items i:hover{
+    background-color: #F0F0F0;
+}
+
+.explore__card__city{
+    font-size: 12px;
+    background-color: #F7F7F7;
+    padding: 10px;
+    margin-top: 10px;
+    width: fit-content;
 }
