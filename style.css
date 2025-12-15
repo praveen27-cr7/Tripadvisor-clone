@@ -21,8 +21,14 @@ body{
     height: 20px;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 30px;
     margin-top: 15px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 .navbar__s1 img{
@@ -146,7 +152,8 @@ body{
     outline: none;
 }
 
-.hero__searchbar button{
+.hero__searchbar button,
+.chatbox button{
     padding: 10px 20px;
     background-color: #00EB5B;
     border: 1px solid #00AB43;
@@ -271,7 +278,8 @@ body{
    height: 350px;
 }
 
-.review{
+.review,
+.review__2{
     width: 100%;
     height: 450px;
     margin-top: 80px;
@@ -324,4 +332,70 @@ body{
 .review__detail button{
     font-size: 16px;
     margin-top: 20px;
+    padding: 15px 20px;
+}
+
+.review__2{
+    background-color: #F7F7F7;
+}
+
+.review__2 h2{
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.review__2 h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.review__2 p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.footer{
+    margin-top: 80px;
+    background-color: #F7F7F7;
+    padding: 20px 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.footer h1{
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.footer p{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.footer p:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px ;
+}
+
+.footer-3 p{
+    background-color: #F7F7F7;
+    padding: 10px 40px;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+}
+
+.chatbox button{
+    position: fixed;
+    bottom: 30px;
+    right: 70px;
+}
+
+.chatbox button:hover{
+    background-color: #05D352;
 }
