@@ -79,7 +79,8 @@ body{
     color: var(--primary-color)
 }
 
-.navbar__s3 p:hover{
+.navbar__s3 p:hover
+{
    background-color: #E5E5E5;
 }
 
@@ -89,7 +90,8 @@ body{
     background-color: var(--primary-color)
 }
 
-.navbar__s3__item2:hover{
+.navbar__s3__item2:hover,
+.review__detail button:hover{
     background-color: #143C24 !important;
 }
 .hero{
